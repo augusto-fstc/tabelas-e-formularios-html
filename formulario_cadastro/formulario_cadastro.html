@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form onsubmit="return validarFormulario()">
+
+    <h1>Formulário de Cadastro</h1>
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" minlength="8" required>
+
+    
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+    
+    <label>Gênero:</label>
+    <div class="radio-group">
+        <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+        <label><input type="radio" name="genero" value="outro"> Outro</label>
+    </div>
+
+    
+    <label>Interesses:</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="interesses" value="tecnologia"> Tecnologia</label>
+        <label><input type="checkbox" name="interesses" value="esporte"> Esporte</label>
+        <label><input type="checkbox" name="interesses" value="arte"> Arte</label>
+        <label><input type="checkbox" name="interesses" value="musica"> Música</label>
+        <label><input type="checkbox" name="interesses" value="musica"> Dança</label>
+        <label><input type="checkbox" name="interesses" value="musica"> Turismo</label>
+    </div>
+
+
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" name="cidade" required>
+        <option value="">Selecione sua cidade</option>
+        <option value="SaoPaulo">São Paulo</option>
+        <option value="Curitiba">Rio Grande do Sul</option>
+        <option value="RioDeJaneiro">Rio de Janeiro</option>
+        <option value="Curitiba">Minas Gerais</option>
+        <option value="BeloHorizonte">Belo Horizonte</option>
+        <option value="Salvador">Salvador</option>
+        <option value="Curitiba">Curitiba</option>
+    </select>
+
+    
+    <label for="quantidadeProdutos">Quantidade de Produtos:</label>
+    <input type="number" id="quantidadeProdutos" name="quantidadeProdutos" min="1" max="100" required>
+
+ 
+    <label for="observacoes">Observações Adicionais:</label>
+    <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
+  
+    <button type="submit">Cadastrar</button>
+</form>
+    
+</body>
+</html>
