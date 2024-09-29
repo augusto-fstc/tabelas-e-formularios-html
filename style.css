@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+caption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+/* Estilos para destaque */
+.primeiro {
+    background-color: gold;
+    font-weight: bold;
+    color: #000;
+}
+.segundo {
+    background-color: silver;
+    font-weight: bold;
+    color: #000;
+}
+.terceiro {
+    background-color: #cd7f32; /* Bronze */
+    font-weight: bold;
+    color: #000;
+}
+.aprovados {
+    background-color: #77ff82;
+}
+.reprovados {
+    background-color: #ff7777;
+}
